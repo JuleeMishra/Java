@@ -1,0 +1,9 @@
+class Parent {
+	void m1(){System.out.println("Parent class m1 method");}
+}
+class Child extends Parent{
+	void m1(){System.out.println("Child class m2 method");}
+	public static void main(String[] args) {
+		new Child().m1();
+	}
+}

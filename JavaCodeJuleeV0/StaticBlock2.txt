@@ -1,0 +1,26 @@
+// Since no object is created , Instance block will not be executed. However When we compile the .java file it will create a .class file. So at the time of
+//.Class file creation static block will be executed.
+
+public class StaticBlock1 {
+	{
+		System.out.println("Instance block-1 execution ");
+	}
+	{
+		System.out.println("Instance block-2 execution ");
+	}
+	static 
+	{
+		System.out.println("Static Block-1 execution ");
+	}
+	static 
+	{
+		System.out.println("Static Block-2 execution ");
+	}
+	
+	public static void main(String[] args) {
+			
+		
+	}
+	
+
+}

@@ -1,0 +1,25 @@
+import java.util.*;
+class GenericDemo 
+{
+	
+	public static void main(String[] args) 
+	{
+		Emp e1 = new Emp("Neetu", 36);
+		Emp e2 = new Emp("Meenu", 34);
+		Emp e3 = new Emp("Julee", 29);
+		Emp e4 = new Emp("Pankaj", 33);
+		Emp e5 = new Emp("Navneet", 31);
+		Emp e6 = new Emp("Satya", 28);
+		ArrayList<Emp> al = new ArrayList<Emp>();
+		al.add(e1);
+		al.add(e2);
+		al.add(e3);
+		al.add(e4);
+		al.add(e5);
+		al.add(e6);
+		for (Emp ee:al)
+		{
+			System.out.println(ee.Name+"---------->"+ee.Age);
+		}
+	}
+}

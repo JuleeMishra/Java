@@ -1,0 +1,22 @@
+D:\Academics\Java\JavaFiles\JavaCodeJuleeV1\JarEG>javac abc.java
+
+D:\Academics\Java\JavaFiles\JavaCodeJuleeV1\JarEG>jar -cvf abc1.jar abc.class
+added manifest
+adding: abc.class(in = 423) (out= 281)(deflated 33%)
+
+D:\Academics\Java\JavaFiles\JavaCodeJuleeV1\JarEG>javac -cp . abc1.jar xyz.java
+error: Class names, 'abc1.jar', are only accepted if annotation processing is explicitly requested
+1 error
+
+D:\Academics\Java\JavaFiles\JavaCodeJuleeV1\JarEG>java -cp .;abc1.jar xyz
+Error: Could not find or load main class xyz
+
+D:\Academics\Java\JavaFiles\JavaCodeJuleeV1\JarEG>javac -cp .; abc1.jar xyz.java
+error: Class names, 'abc1.jar', are only accepted if annotation processing is explicitly requested
+1 error
+
+D:\Academics\Java\JavaFiles\JavaCodeJuleeV1\JarEG>javac -cp  abc1.jar xyz.java
+
+D:\Academics\Java\JavaFiles\JavaCodeJuleeV1\JarEG>java -cp .;abc1.jar xyz
+30
+100
